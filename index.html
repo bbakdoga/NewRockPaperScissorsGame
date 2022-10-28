@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link href="./style.css" rel="stylesheet">  
+<body>
+  <div class="start-page">
+    <h1>Welcome to the game of Rock, Paper, and Scissors</h1>
+    <button  id='mylink'>Ready?</button>
+    <h2 class="rules"> Rules</h2>
+    <p class="rules">
+      The game consists of 5 rounds. The winner will be displayed at the end of 5 rounds.
+      Each round computer will get to randomly pick.
+    </p>
+    <p class="rules">
+      Rock wins against scissors; paper wins against rock; and scissors wins against paper. 
+      If both players throw the same hand signal, it is considered a tie, 
+      and play resumes until there is a clear winner.
+    </p>
+    <p>
+      Good Luck!
+    </p>
+  </div>
+  <div class="game">
+    <h1>Welcome to the game of Rock, Paper, and Scissors</h1>
+    <div class="images">
+      <img src="./images/rock.png" id="rock" class="childImg" alt="Image of a rock">
+      <img src="./images/paper.png" id="paper" class="childImg" alt="Image of a paper">
+      <img src="./images/scissors.png" id="scissors" class="childImg" alt="Image of a scissors">
+    </div>
+    <div class="round-display">
+      <table id="scoreBoard">
+        <thead>
+          <tr>
+            <th>Player Score</th>
+            <th>Round Result</th>
+            <th>Computer Score</th>
+            <th>Round</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="result">
+    <p id="winner"></p>
+    <button id="again">Play again?</button>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</head>
